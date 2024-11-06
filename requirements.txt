@@ -1,0 +1,11 @@
+opencv-python>=4.10.0.84
+mediapipe>=0.10.18
+numpy>=1.26.4
+torch>=1.13.1
+transformers>=4.46.2
+streamlit>=1.39.0
+fastapi>=0.115.4
+python-multipart>=0.0.17
+pytest>=6.2.5
+black>=21.12b0
+flake8>=3.9.2
