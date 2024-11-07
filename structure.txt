@@ -1,0 +1,79 @@
+height_estimator/
+├── .env                     # Environment variables
+├── .gitignore              # Git ignore file
+├── README.md               # Project documentation
+├── requirements.txt        # Project dependencies
+├── setup.py               # Package setup file
+├── config/
+│   ├── __init__.py
+│   ├── settings.py        # Main configuration settings
+│   ├── logging_config.py  # Logging configuration
+│   ├── model_config.py    # Model-specific configurations
+│   └── config.yaml        # YAML configuration file
+├── src/
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── estimator.py   # Main height estimation logic
+│   │   ├── processor.py   # Video/image processing
+│   │   └── pipeline.py    # Processing pipeline
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── image_processing.py
+│   │   ├── calibration.py
+│   │   └── visualization.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── model_loader.py
+│   │   ├── pose_model.py
+│   │   └── depth_model.py
+│   └── api/
+│       ├── __init__.py
+│       ├── endpoints.py
+│       ├── schemas.py      # API request/response schemas
+│       └── middleware.py   # API middleware
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py        # Test configurations
+│   ├── test_core/
+│   │   ├── __init__.py
+│   │   ├── test_estimator.py
+│   │   ├── test_processor.py
+│   │   └── test_pipeline.py
+│   ├── test_models/
+│   │   ├── __init__.py
+│   │   ├── test_pose_model.py
+│   │   └── test_depth_model.py
+│   └── test_utils/
+│       ├── __init__.py
+│       ├── test_image_processing.py
+│       ├── test_calibration.py
+│       └── test_visualization.py
+├── data/
+│   ├── calibration/
+│   │   ├── reference_images/
+│   │   └── calibration_data.json
+│   ├── models/
+│   │   ├── weights/
+│   │   └── configs/
+│   ├── logs/
+│   │   ├── error.log
+│   │   ├── info.log
+│   │   └── debug.log
+│   └── sample_images/
+├── docs/
+│   ├── api/
+│   │   ├── endpoints.md
+│   │   └── schemas.md
+│   ├── models/
+│   │   ├── pose.md
+│   │   └── depth.md
+│   ├── installation.md
+│   ├── usage.md
+│   ├── configuration.md
+│   └── development.md
+└── scripts/
+    ├── install.sh
+    ├── setup_env.sh
+    ├── run_tests.sh
+    └── deploy.sh

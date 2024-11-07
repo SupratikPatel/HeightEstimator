@@ -7,5 +7,6 @@ streamlit>=1.39.0
 fastapi>=0.115.4
 python-multipart>=0.0.17
 pytest>=6.2.5
-black>=21.12b0
+black>=24.10.0
 flake8>=3.9.2
+tokenizers==0.13
